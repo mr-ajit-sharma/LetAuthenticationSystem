@@ -1,0 +1,14 @@
+footer{
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 5em;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 88.8%;
+}
+span{
+    color: crimson;
+}
