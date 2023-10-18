@@ -100,7 +100,8 @@ module.exports.signInSession = (req, res, next) => {
 module.exports.logOut = (req, res) => {
     req.logOut((err) => {
         if (err) {
-            errors.push({ msg: `Unable to log out` });
+            console.log(err,"log out error")
+           res.send({message:"logout error"})
         }
         req.flash('success_msg', 'You are logged out');
         res.redirect('/users/sign-in');
