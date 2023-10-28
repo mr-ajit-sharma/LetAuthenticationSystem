@@ -1,6 +1,6 @@
 const express=require('express')
 require('dotenv').config()
-const port= process.env.Port  
+const port= 7999 || process.env.PORT  
 const db=require('./configs/mongoose')
 const expressLayouts=require('express-ejs-layouts')
 const flash=require('connect-flash')
